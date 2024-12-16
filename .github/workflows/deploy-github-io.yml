@@ -36,7 +36,8 @@ jobs:
       - uses: leafo/gh-actions-luarocks@v4
       - name: Install luarocks modules
         run: |
-          luarocks install json-lua lfs
+          luarocks install json-lua 
+          luarocks install lfs
 
       - name: Compile webpage
         run: |
